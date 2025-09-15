@@ -1,2 +1,7 @@
-.dovednosi { border: 10px;
+.dovednosi { 
              background-color: aqua; }
+
+h1 { color: rgb(79, 70, 229); }
+
+body { justify-content: center; 
+       align-items: center;}
