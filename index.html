@@ -1,47 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Jan Novák — Portfolio</title>
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
-   <h1>Jan Novák</h1>
-   <h2></h2>
-   <p>Grafický designer & vizuální tvůrce</p>
-   <p>Zaměřuji se na minimalistický design, práci s <br>
-      typografií a tvorbu vizuální identiti znacky.</p>
+<div class="page">
+  <main class="card">
+    <header class="profile-row">
+      <div class="avatar-wrap">
+        <img class="avatar" src="jannovak.jpg" alt="Portrét Jana Nováka">
+      </div>
+      <div>
+        <h1 class="name">Jan Novák</h1>
+        <div class="role">Grafický designér & vizuální tvůrce</div>
+        <p class="bio">Zaměřuji se na minimalistický design, práci s typografií a tvorbu vizuální identity značek.</p>
+      </div>
+    </header>
 
-   <h2>Dovednosti</h2>
-   <div class="dovednosti">
-     <p>Adobe Illustrator</p>
-     <p>Adobe Photoshop</p>
-     <p>Adobe Indesign</p>
-     <p>HTML/CSS</p>
-   </div>
+    <section>
+      <h2 class="section-title">Dovednosti</h2>
+      <div class="skills">
+        <div class="pill">Adobe Illustrator</div>
+        <div class="pill">Adobe Photoshop</div>
+        <div class="pill">Adobe InDesign</div>
+        <div class="pill">HTML/CSS</div>
+      </div>
+    </section>
 
+    <section>
+      <h2 class="section-title">Portfolio</h2>
+      <div class="portfolio-grid">
+        <article class="proj">
+          <img class="proj-img" src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?q=80&w=1200&auto=format&fit=crop" alt="Logo pro kavárnu">
+          <div class="proj-body">
+            <h3 class="proj-title">Logo pro kavárnu</h3>
+            <p class="proj-desc">Jednoduché a moderní logo pro lokální podnik.</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img class="proj-img" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" alt="Plakát na kulturní akci">
+          <div class="proj-body">
+            <h3 class="proj-title">Plakát na kulturní akci</h3>
+            <p class="proj-desc">Výrazná barevnost a typografická kompozice.</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img class="proj-img" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" alt="Obálka knihy">
+          <div class="proj-body">
+            <h3 class="proj-title">Obálka knihy</h3>
+            <p class="proj-desc">Stylizovaná ilustrace a práce s kontrastem.</p>
+          </div>
+        </article>
+      </div>
+    </section>
 
-   <h2>Portfolio</h2>
-   <div>
-    <p>Logo pro kavárnu</p>
-    <p>Jednoduché a moderní logo pro lokální podnik.</p>
-   </div>
-
-   
-   <div>
-    <p>Plakát na klturní akci</p>
-    <p>Výrazná barevnost a typografická kompozozice.</p>
-   </div>
-
-     <div>
-    <p>Obálka knihy</p>
-    <p>Stylizovaná ilustrace a práce s kontrastem.</p>
-   </div>
-
-   <h2>Kontakt</h2>
-<p>E-mail: jan.novak@email.com</p>
-<p>Instagram: @novak.design</p>
-<p>Behance: behance.net/novak</p>
+    <section class="contact">
+      <h2 class="section-title">Kontakt</h2>
+      <p><b>E-mail:</b> jan.novak@email.com</p>
+      <p><b>Instagram:</b> <a href="">@novak.design</a></p>
+      <p><b>Behance:</b> <a href="">behance.net/novak</a></p>
+    </section>
+  </main>
+</div>
 </body>
 </html>
+
