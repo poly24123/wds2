@@ -57,10 +57,10 @@
     font-size:18px;
   }
 
-  /* --- Dovednosti --- */
+  
   .skills {
     display:flex;
-    flex-direction:column; /* na mobilu vždy pod sebe */
+    flex-direction:column; 
     gap:12px;
   }
   .pill{
@@ -72,10 +72,10 @@
     font-size:14px;
   }
 
-  /* --- Portfolio --- */
+ 
   .portfolio-grid{
     display:flex;
-    flex-direction:column; /* na mobilu vždy pod sebou */
+    flex-direction:column; 
     gap:18px;
   }
   .proj{
@@ -87,7 +87,7 @@
     box-shadow: 0 6px 14px rgba(15,23,42,0.03);
   }
   .proj-img{
-    width:100%; /* obrázek přes celou šířku */
+    width:100%; 
     height:auto;
     display:block;
     object-fit:cover;
@@ -97,7 +97,7 @@
   .proj-title{margin:0 0 6px 0;font-weight:700;font-size:14px}
   .proj-desc{margin:0;font-size:13px;color:#6b717a}
 
-  /* Kontakt */
+
   .contact p{margin:8px 0;font-size:14px}
   
   .contact a{color:var(--accent); text-decoration:none}
