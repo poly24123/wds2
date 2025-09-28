@@ -1,132 +1,217 @@
-  :root{
-    --bg: rgb(243,244,246);
-    --card-bg: white;
-    --muted: rgb(31,41,55);
-    --accent: rgb(79,70,229);
-    --accent-2: rgb(99,102,241);
-    --pill-bg: rgb(238,242,255);
-    --pill-border: rgba(79,70,229,0.06);
-    --soft-shadow: 0 6px 18px rgba(15,23,42,0.06);
-  }
   * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-  body{
-    margin:0;
-    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    background: var(--bg);
-    color: var(--muted);
-    padding:24px;
-    line-height:1.35;
-  }
-
-  .page {max-width: 1000px;margin: 0 auto;}
-
-  .card {
-    background: var(--card-bg);
-    border-radius: 14px;
-    padding: 22px;
-    box-shadow: var(--soft-shadow);
-  }
-
-  .profile-row{display:flex;gap:18px;align-items:center;}
-
-  .avatar-wrap{
-    flex: 0 0 95px;
-    width:95px;height:95px;
-    border-radius:50%;
-    overflow:hidden;
-  }
-  .avatar{width:100%;
-          height:100%;
-          object-fit:cover;
-          border-radius:50%;
-          border: solid 4px var(--accent);
-     }
-
-  .name {font-size:22px;font-weight:700;color:var(--accent);margin:0}
-  .role {margin:4px 0 8px 0;font-weight:500}
-  .bio {margin:0;font-size:14px;color:#5a646f}
-
-  .section-title {
-    color: var(--accent-2);
-    font-weight:700;
-    margin: 20px 0 12px 0;
-    font-size:18px;
-  }
-
-  
-  .skills {
-    display:flex;
-    flex-direction:column; 
-    gap:12px;
-  }
-  .pill{
-    background: var(--pill-bg);
-    border-radius: 10px;
-    padding: 14px 20px;
-    text-align:center;
-    border: 1px solid var(--pill-border);
-    font-size:14px;
-  }
-
- 
-  .portfolio-grid{
-    display:flex;
-    flex-direction:column; 
-    gap:18px;
-  }
-  .proj{
-    background: white;
-    border-radius:10px;
-    padding:12px;
-    overflow:hidden;
-    border: 1px solid rgba(15,23,42,0.04);
-    box-shadow: 0 6px 14px rgba(15,23,42,0.03);
-  }
-  .proj-img{
-    width:100%; 
-    height:auto;
-    display:block;
-    object-fit:cover;
-    border-radius:8px;
-  }
-  .proj-body{padding:12px}
-  .proj-title{margin:0 0 6px 0;font-weight:700;font-size:14px}
-  .proj-desc{margin:0;font-size:13px;color:#6b717a}
-
-
-  .contact p{margin:8px 0;font-size:14px}
-  
-  .contact a{color:var(--accent); text-decoration:none}
-
-  @media (min-width: 600px) {
-  .skills {
-     display:grid;
-    grid-template-columns: repeat(2,1fr);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
   
+  
+  
+  
+  :root {
+  --pozadi: rgb(243, 244, 246);
+  --pozadi2: white;
+  --text: rgb(31, 41, 55);
+  --hlavni: rgb(79, 70, 229);
+  --hlavni2: rgb(99, 102, 241);
+  --znalost-pozadi: rgb(238, 242, 255);
+  --znalost-ram: rgba(79, 70, 229, 0.06);
+  --stiny: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
 
-  @media (min-width:1000px){
-    body{padding:48px}
-    .card{padding:32px}
-    .name{font-size:28px}
-    .bio{font-size:15px}
 
-    .skills{ display:grid;
-      grid-template-columns: repeat(4,1fr);}
-    .pill{min-width:200px}
 
-    .portfolio-grid{
-      display:grid;
-      grid-template-columns: repeat(3,1fr);
-      gap:22px;
-    }
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  background: var(--pozadi);
+  color: var(--text);
+}
+
+.stranka {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.obal {
+  padding: 22px;
+  border-radius: 14px;
+  background: var(--pozadi2);
+  box-shadow: var(--stiny);
+}
+
+
+.profil {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+
+
+.foto {
+  width: 95px;
+  height: 95px;
+  flex: 0 0 95px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--hlavni);
+}
+
+.jmeno {
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--hlavni); }
+
+
+.role {
+  margin: 4px 0 8px;
+  font-weight: 500;
+}
+
+.popis {
+  margin: 0;
+  font-size: 14px;
+  color: #5a646f;
+}
+
+
+.nadpis {
+  margin: 20px 0 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--hlavni2)}
+
+
+.dovednosti {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.znalost   {
+  padding: 14px 20px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 14px;
+  background: var(--znalost-pozadi);
+  border: 1px solid var(--znalost-ram);
+}
+
+
+.projekty {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.projekt {
+  padding: 12px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(15, 23, 42, 0.04);
+  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.03);
+}
+
+.projekt img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.projekt-text {
+  padding: 12px;
+}
+
+
+
+.projekt-nazev {
+  margin: 0 0 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.projekt-popis {
+  margin: 0;
+  font-size: 13px;
+  color: #6b717a;
+}
+
+
+
+.kontakt p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+
+.kontakt a {
+  color: var(--hlavni);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+@media (min-width: 600px) {
+  .dovednosti {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  body {
+    padding: 48px;
   }
 
 
+  .obal {
+    padding: 32px;
+  }
 
-  a:hover{text-decoration:underline}
+  .jmeno {
+    font-size: 28px;
+  }
+
+  
+  .popis {
+    font-size: 15px;
+  }
+
+  .dovednosti {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .znalost {
+    min-width: 200px;
+  }
+
+  .projekty {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+  }
+}
